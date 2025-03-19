@@ -7,12 +7,13 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
     
 </head>
 <body class= "bg-[#F4F7FF] ">
     
-        <section class=" rounded-md ">
-            <nav-bar class="flex justify-between bg-white items-center pb-5 " > 
+        <section class="  m-10 mr-25 ">
+            <nav-bar class=" rounded-3xl flex justify-between bg-white items-center pb-5  " > 
                 <!--NAVBAR BOX 1 LOGO BOX-->
                     <div class="logo-box flex item-center space-x-2">
                         <img class="ml-10 mt-5" src="./assets/logo.png" alt="">
@@ -25,7 +26,8 @@
                     <div class="flex space-x-3 items-center mr-10 mt-5">
                         <div class="flex gap-2 items-center justify-center bg-[#F4F7FF] rounded-3xl w-24 h-12 ">
                             <img class="h-8" src="./assets/checkbox.png" alt="">
-                            <h1 class="font-bold text-3xl">23</h1>
+                            <h1 id="checkBox"
+                            class="font-bold text-3xl">23</h1>
                         </div>
                         <div  class="bg-[#F4F7FF] rounded-full h-12 w-12 flex justify-center items-center">
                             <img 
@@ -83,7 +85,7 @@
                             </div>
                             <div>
                                 <p class="text-xl text-gray-500">Wed ,</p>
-                                <h1 id="counterOne"
+                                <h1 id="date"
                                 class="font-bold text-2xl"> Jul 28 2025  </h1>
                             </div>
             
@@ -244,13 +246,17 @@
                         <img src="./assets/activity.png" alt="">
                         <h1 class="text-gray-600 font-semibold">Activity Log</h1>
                     </div>
-                    <div class="flex justify-center">
+                    <div
+                    id="clearBtn"
+
+                     class="flex justify-center">
                         <button class="btn btn-primary ">Clear history</button>
                     </div>
                     
                 </div>
-                <div class="bg-[#F4F7FF] m-5 p-5 rounded-2xl">
-                    <p class="text-gray-600">
+                <div id="activityLog"
+                class="bg-[#F4F7FF] m-5 p-5 rounded-2xl space-y-5">
+                    <p class="text-gray-600 ">
                         You have Complete The Task Add Dark Mode at 12:48:15 PM
     
                     </p>
@@ -271,6 +277,9 @@
     
    <script src="./script/middleButton.js"></script>
    <script src="./script/uitilities.js"></script>
+   <script src="./script/clearBtn.js"></script>
+   <script src="./script/backBtn.js"></script>
+   <script src="./script/curretnDate.js"></script>
     
 </body>
 </html>

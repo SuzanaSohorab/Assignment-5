@@ -7,10 +7,11 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
 </head>
-<body class="bg-red-500">
+<body class="bg-[#F4F7FF]">
     <section class="bg-white h-24 m-10 rounded-md ">
-        <nav-bar class="flex justify-between items-center"> 
+        <nav-bar class="flex justify-between items-center mt-10"> 
             <!--NAVBAR BOX 1 LOGO BOX-->
                 <div class="logo-box flex item-center space-x-2">
                     <img class="ml-10 mt-5" src="./assets/logo.png" alt="">
@@ -20,55 +21,66 @@
                     </div>
                 </div>
                 
-                <button class="btn btn-primary"> Back To Desk</button>
+                <button id="backBtn"class="btn btn-primary p-5 mr-5"> Back To Desk</button>
              
           
-        </nav-bar>
+        </nav-bar> 
     </section>
-    <search class="space-y-5">
+    <section class="space-y-5 m-10">
         <h1 class="text-3xl font-bold flex justify-center">Blog</h1>
-        <div class=" bg-white">
-            <p class="text-3xl font-bold">
+        <div class=" bg-white  p-5 rounded-3xl text-gray-700">
+            <p class="text-3xl font-bold text-black">
                 Question-1: What are the different ways to select an element in the DOM?
             </p>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti corrupti quas laboriosam quidem. Aut sunt at molestiae tempore possimus dolore? Ab odio veniam dolore hic vitae, quod veritatis provident.</p>
+         
+            <p>Different ways of select elements
+               
+                    <li>document.getElementById</li>
+                    <li>document.getElementsByClassName</li>
+                    <li>document.getElementsByTagName</li>
+                    <li>document.querySelector</li>
+                    <li>document.querySelectorAll</li>
+                </p>
         </div>
-       
-        <div class=" bg-white">
+        <div class=" bg-white p-5 rounded-3xl">
             <p class="text-3xl font-bold">
                 Question-2: What is the difference between innerHTML, innerText, and textContent ?
 
             </p>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti corrupti quas laboriosam quidem. Aut sunt at molestiae tempore possimus dolore? Ab odio veniam dolore hic vitae, quod veritatis provident.</p>
+            
+            <p class="text-gray-700">innerHTML uses for set html content or get html tags
+                innerText uses to set inner text of an element or to get the value of p,h all these tag.
+            </p>
         </div>
-        <div class=" bg-white">
+        <div class=" bg-white p-5 rounded-3xl">
             <p class="text-3xl font-bold">
                 Question-3: What is event delegation in the DOM?
             </p>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti corrupti quas laboriosam quidem. Aut sunt at molestiae tempore possimus dolore? Ab odio veniam dolore hic vitae, quod veritatis provident.</p>
+            
+            <p class="text-gray-700">Event delegation means add event listener to a parent element instead of add it to every child element of that parent</p>
         </div>
-        <div class=" bg-white">
+        <div class=" bg-white p-5 rounded-3xl">
             <p class="text-3xl font-bold">
                 
                 Question-4: What is event bubbling in the DOM?
             </p>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti corrupti quas laboriosam quidem. Aut sunt at molestiae tempore possimus dolore? Ab odio veniam dolore hic vitae, quod veritatis provident.</p>
+           
+            <p class="text-gray-700">Its a process where an event starts from child element and moves back to parent element</p>
         </div>
-        <div class=" bg-white">
+        <div class=" bg-white p-5 rounded-3xl">
             <p class="text-3xl font-bold">
                 
                 Question-5: How do you create, add, and remove elements using JavaScript?
             </p>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti corrupti quas laboriosam quidem. Aut sunt at molestiae tempore possimus dolore? Ab odio veniam dolore hic vitae, quod veritatis provident.</p>
+            
+            <p class="text-gray-700">To Creart- document.creatElement <br>
+            To add- document.appendChild <br>
+            To remove- element-name.remove()</p>
         </div>
 
 
-    </search>
+    </section>
+    <script src="./script/backBtn.js"></script>
 
     
 </body>
