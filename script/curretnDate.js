@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded',function( ) {
+
+    
     let date = document.getElementById("date");
 
 

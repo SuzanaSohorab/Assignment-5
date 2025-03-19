@@ -48,12 +48,14 @@ function completeBtn(){
             hours = hours % 12 || 12;
 
             let formateTime = `${hours}:${minutes < 10 ? "0" : " "}${minutes}: ${seconds <10 ? "0": "" }${seconds} ${amPm}`;
-            
+           //title value
+           let taskTitle= this.closest('.taskContainer').querySelector(".btnTitle").innerText;
             //add new p tag in activithy log
+
             let p = document.createElement("p");
             p.classList.add("text-gray-600");
-            
-            p.innerText = ` you have completed task at ${formateTime}`;
+          
+            p.innerText = `  you have completed task "${taskTitle}" at ${formateTime}`;
             
 
 
